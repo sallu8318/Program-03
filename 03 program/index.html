@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 03</title>
+</head>
+
+<body>
+    <h1>This is simple squre root program</h1>
+    <h1 id="ans1"></h1>
+    <h1>This is calculate the area of any Triangles</h1>
+    <h1 id="ans2"></h1>
+    <script>
+        // This is simple squre root program
+        var x = prompt("Please the enter the value of Squre root", '')
+        squre = Math.sqrt(parseInt(x));
+        document.getElementById("ans1").innerHTML = squre;
+
+        // This is calculate the area of any triangles
+        // is kay liay 1 formulay use hotay ha 
+        // 1) s = (a + b + c) / 2 (s ki value ko find karnay kay liay ye formula use karay)
+        // 2) area = squreroot{s((a-s)*(b-s)*(c-s))}
+        var a = prompt("Please enter the value of anglr one side ", "");
+        b = prompt("Please enter the value of angle second side ", "");
+        c = prompt("Please enter the value of angle third side ", "");
+        console.log(a, b, c);
+        s = (parseInt(a) + parseInt(b) + parseInt(c)) / 2;
+        console.log(s);
+        d = s * ((s - parseInt(a)) * (s - parseInt(b)) * (s - parseInt(c)));
+        console.log(d)
+        area = Math.sqrt(d)
+        console.log(area)
+        document.getElementById("ans2").innerHTML = area;
+    </script>
+</body>
+
+</html>
